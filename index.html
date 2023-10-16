@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang = "en">
+    
+    <head>
+        <meta charset = "UTF-8">
+        <title>Shivangi Shukla</title>
+
+        <link rel = "icon" type = "image/png" href = "images/me.jpeg"/>
+
+        <link rel = "stylesheet" href = "./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- <h1>Shivangi's Portfolio</h1> -->
+        <header>
+            <nav>
+                <div class = "left">Shivangi Shukla</div>
+                <div class = "right">
+                    <ul>
+                        <li><a href = "./index.html">Home</a></li>
+                        <li><a href = "./about.html">About</a></li>
+                        <li><a href = "./project.html">Projects</a></li>
+                        <li><a href = "./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class = "firstSection">
+                <div class="leftSection">
+                    Hi! I am <span class = "color">Shivangi</span> 
+                    and I am a fervent
+                    <span id="element"></span>
+                    <br> <br>
+                    <div class="buttons">
+                        <a href = "https://docs.google.com/document/d/1hAUzU3r3vYUwEPDzodPx_izHuKAVK4B94XM-yiE9m00/edit?usp=drivesdk">
+                            <button class="btn1">Download Resume</button>
+                        </a>
+                        <a href = "https://github.com/shivangi153">
+                            <button class="btn">Visit GitHub</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="rightSection">
+                    <img src = "images/developer.png" alt = "developer photo">
+                </div>
+            </section>
+
+            <hr>
+            <section class="secondSection">
+                <span class = "exp-color">What I've done so far</span>
+                <h1>Work Experiences</h1>
+
+                <div class="box">
+                    <div class="vertical">
+                        <img class = "img1" src="images/designer.png" alt = "graphic designer">
+                        <div class="vertical-title">
+                            Design Head <br>@YRC
+                            <br> (May 2023 - Dec 2023)
+                        </div>
+                        <div class="vertical-desc">
+                            <ul>
+                                <li>Played a crucial role in shaping the club's visual identity and 
+                                    communication materials, ensuring they align with the
+                                    mission and values of the Youth Red Cross.
+                                </li> <br><br>
+                                <li>
+                                    My role involved harnessing creativity to create compelling designs 
+                                    that raise awareness, engage members, and drive
+                                    impactful initiatives for humanitarian causes within the club and
+                                    the broader community.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="vertical2">
+                        <img class="img2" src="images/data scientist.png" alt="data scientist">
+                        <div class="vertical-title2">
+                            Data Scientist <br>@Capabl
+                            <br> (Aug 2023)
+                        </div>
+                        <div class="vertical-desc2">
+                            <ul class = "list">
+                                <li>It was a work from home internship which gave exposure to the different aspects of Data Science including Machine
+                                Learning and Artificial Intelligence.</li> <br><br>
+                                <li>Tech Stack used: Python, R language</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="vertical3">
+                        <img class="img3" src="images/web developer.png" alt="web developer">
+                        <div class="vertical-title3">
+                            Web Developer <br>@Nayara Energy
+                            <br> (Aug 2023 - Sep 2023)
+                        </div>
+                        <div class="vertical-desc3">
+                            <ul>
+                                <li>An on-site internship which was based on building a web portal 
+                                    on contractor safety audit.
+                                </li> <br><br>
+                                <li>Tech Stack used: HTML,CSS, JavaScript, Xampp, SQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+        <footer>
+            <div class="flex">
+                <div class="footer-first">
+                    <h3>Copyright &#169 Shivangi's Developer Portfolio | All rights reserved </h3>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+        <script>
+            var typed = new Typed('#element', {
+                strings: ['<i>Web Developer</i>', ' <i>Graphic Designer</i>', '<i>Data Analyst.</i>'],
+                typeSpeed: 50,
+            });
+        </script>
+
+    </body>
+</html>

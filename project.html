@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Projects</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+            integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+        <style>
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 190vh;
+                /* min-height: 100vh; */
+                background: #0d1944;
+                font-family: 'Nunito', sans-serif;
+                position: relative;
+                background: url(contact.jpg);
+                background-size: cover;
+                opacity: 1;
+            }
+
+            hr {
+                width: 80%;
+                margin: 0 auto;
+                margin-top: -20px;
+                margin-left: 115px;
+            }
+
+            .box1 {
+                position: relative;
+                width: 500px;
+                height: 540px;
+                /* display: flex; */
+                /* display: inline-block; */
+                justify-content: center;
+                align-items: center;
+                background: #060c21;
+                top: 90px;
+                margin-left: 20px;
+                text-align: center;
+            }
+
+            /* .box:last-child {
+                margin-left: 20px;;
+            } */
+
+            .project-container {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                /* align-items: center;
+                margin-top: -10px; */
+
+            }
+
+            
+
+            .box1:before {
+                content: '';
+                position: absolute;
+                top: -2px;
+                left: -2px;
+                right: -2px;
+                bottom: -2px;
+                background: white;
+                z-index: -1;
+            }
+
+            .box1:after {
+                content: '';
+                position: absolute;
+                top: -2px;
+                left: -2px;
+                right: -2px;
+                bottom: -2px;
+                background: white;
+                z-index: -2;
+                filter: blur(40px);
+            }
+
+            .box1:before,
+            .box1:after {
+                background: linear-gradient(235deg, #fff, #060c21, #00bcd4);
+            }
+
+
+
+            .box2 {
+                position: relative;
+                width: 500px;
+                height: 540px;
+                /* display: flex; */
+                /* display: inline-block; */
+                justify-content: center;
+                align-items: center;
+                background: #060c21;
+                top: 90px;
+                margin-left: 250px;
+                text-align: center;
+            }
+
+            .box2:before {
+                content: '';
+                position: absolute;
+                top: -2px;
+                left: -2px;
+                right: -2px;
+                bottom: -2px;
+                background: white;
+                z-index: -1;
+            }
+
+            .box2:after {
+                content: '';
+                position: absolute;
+                top: -2px;
+                left: -2px;
+                right: -2px;
+                bottom: -2px;
+                background: white;
+                z-index: -2;
+                filter: blur(40px);
+            }
+
+            .box2:before,
+            .box2:after {
+                background: linear-gradient(235deg, #fff, #060c21, #00bcd4);
+            }
+
+
+            .project-container2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 150px;
+                margin-left: -1000px;
+            }
+
+
+            .box3 {
+                position: relative;
+                width: 500px;
+                height: 540px;
+                /* display: flex; */
+                /* display: inline-block; */
+                justify-content: center;
+                align-items: center;
+                background: #060c21;
+                top: 20px;
+                margin-left: 1000px;
+                text-align: center;
+            }
+
+            .box3:before {
+                content: '';
+                position: absolute;
+                top: -2px;
+                left: -2px;
+                right: -2px;
+                bottom: -2px;
+                background: white;
+                z-index: -1;
+            }
+
+            .box3:after {
+                content: '';
+                position: absolute;
+                top: -2px;
+                left: -2px;
+                right: -2px;
+                bottom: -2px;
+                background: white;
+                z-index: -2;
+                filter: blur(40px);
+            }
+
+            .box3:before,
+            .box3:after {
+                background: linear-gradient(235deg, #fff, #060c21, #00bcd4);
+            }
+
+
+
+            
+
+
+            .box1, .box2 {
+                margin-right: 10px;
+            }
+
+
+
+
+            .content {
+                padding: 20px;
+                box-sizing: border-box;
+                color: white;
+                margin-top: -150px;
+            }
+
+            .content h3 {
+                margin-left: 135px;
+            }
+
+            .project {
+                position: relative;
+                min-height: 20vh;
+                padding: 50px 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                color: white;
+                margin-top: -190px;
+            }
+
+            .project h2 {
+                color: white;
+                text-align: center;
+                font-size: 36px;
+                font-weight: 700;
+                margin-top: 110px;
+            }
+
+            .project h3 {
+                font-size: 25px;
+                position: absolute;
+            }
+
+            .pro1 {
+                margin-top: 20px;
+                height: 200px;
+                width: 450px;
+                position: relative;
+                border: 1px solid white;
+            }
+
+            .pro2 {
+                margin-top: 20px;
+                height: 200px;
+                width: 450px;
+                position: relative;
+                border: 1px solid white;
+            }
+
+            .pro3 {
+                margin-top: 20px;
+                height: 200px;
+                width: 450px;
+                position: relative;
+                border: 1px solid white;
+            }
+
+            .content p {
+                font-size: 15px;
+                font-family: 'Lora', serif;
+            }
+
+            .project-link {
+                color: white;
+                font-size: 20px;
+                text-decoration: none;
+                font-family: 'Lora', serif;
+                font-style: italic;
+            }
+
+            .project-link:hover {
+                color: rgb(86, 188, 193);
+            }
+
+            .project-link span {
+                margin-right: 5px;
+            }
+
+            .box2 .content h3 {
+                text-align: center;
+            }
+
+                @media (max-width: 1200px) {
+        /* Adjustments for large screens */
+        .project-container {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .box1,
+        .box2,
+        .box3 {
+            margin: 10px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        /* Adjustments for medium screens */
+        .project-container {
+            flex-direction: column;
+        }
+        .box1,
+        .box2,
+        .box3 {
+            width: 100%;
+            margin: 10px 0;
+        }
+    }
+
+        @media (max-width: 480px) {
+            .project-container {
+                align-items: flex-start;
+            }
+        }
+    
+
+        </style>
+    </head>
+
+    <body>
+        
+        <section class="project">
+            <h2>Project Gallery</h2> <br> <br> <br> <hr>
+            <div class="project-container">   
+            <div class="box1">
+                    <div class="content"><br><br><br><br><br><br><br>
+                        <h3>Portfolio Website</h3>
+                        
+                        <br><br>
+                        <img class = "pro1" src = "images/project.png" alt = "pro1"><br><br>
+                        <p>
+                            My portfolio website is a personal showcase of my work as a web developer. It serves as an online resume, providing
+                            information about my skills, experiences, and projects. <br> The website is designed to be visually appealing, easy to
+                            navigate, and responsive to different screen sizes. My digital showcase comes to life through the harmonious symphony of 
+                            HTML, CSS, and JavaScript, weaving an intricate
+                            tapestry of code that forms my portfolio website, 
+                            allowing visitors to get a comprehensive overview of my 
+                            capabilities and accomplishments.
+                        </p>
+                    </div>
+                </div>
+                
+
+                <div class="box2">
+                    <div class="content"><br><br><br><br><br><br><br>
+                        <h3>Weather API</h3>
+                        
+                        <br><br>
+                        <img class="pro2" src="images/weather.png" alt="pro2"><br><br>
+                        <p>
+                            This project utilizes real-time weather data from 
+                            the OpenWeatherMap API to fetch and display essential 
+                            weather information for any given city, including temperature, 
+                            feels-like temperature, humidity, wind speed, sunrise, sunset, 
+                            and a general weather description. <br> The code translates 
+                            temperature from Kelvin to both Celsius and Fahrenheit for 
+                            user convenience. Finally, it presents the gathered data in a 
+                            user-friendly format for easy access and understanding.
+                            <br> <br>
+                            <a href="https://github.com/shivangi153/weather-api" target="_blank" class="project-link">
+                                <span>🔗</span>github.com/shivangi153/weather-api
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-container2">
+                <div class="box3">
+                    <div class="content"><br><br><br><br><br><br><br>
+                        <h3>Basic ML Predictor</h3>
+                
+                        <br><br>
+                        <img class="pro3" src="images/ml.jpg" alt="pro3"><br><br>
+                        <p>
+                            An elementary Python Machine Learning project employing a Decision Tree Classifier
+                            for music genre prediction. <br>It includes two main components: the first part trains, tests
+                            and evaluates the model's accuracy, <BR> while the second part exports
+                            the decision tree model in a graphical format for visual analysis.
+                            <br> <br> <br> <br>
+                            <a href="https://github.com/shivangi153/ml-predictor" target="_blank" class="project-link">
+                                <span>🔗</span>github.com/shivangi153/ml-predictor
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </body>
+</html>
